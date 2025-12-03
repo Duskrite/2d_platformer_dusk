@@ -1,0 +1,13 @@
+using UnityEngine;
+
+public class AfterEffect : MonoBehaviour
+{
+    public Animator anim;
+    public float duration = 1f;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        Destroy(gameObject, duration);
+    }
+}
